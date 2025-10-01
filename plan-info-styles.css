@@ -1,0 +1,67 @@
+
+.plan-info-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 16px 0 24px 0;
+}
+
+.plan-info-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.plan-info-item:last-child {
+  border-bottom: none;
+}
+
+.info-label {
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.info-value {
+  color: #1e293b;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.info-value.active-time {
+  color: #059669;
+  background: #d1fae5;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+.info-value.plan-type {
+  color: #1e293b;
+  font-weight: 600;
+}
+
+.info-value.price {
+  color: #1e293b;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .plan-info-card {
+    padding: 16px;
+  }
+
+  .plan-info-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    padding: 12px 0;
+  }
+
+  .info-value {
+    align-self: flex-end;
+  }
+}
