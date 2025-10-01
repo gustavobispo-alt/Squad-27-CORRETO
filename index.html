@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitação de Cancelamento - Engplay</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+
+        <main class="main-content">
+
+            <div class="back-section">
+                <button class="back-btn" onclick="goBack()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M19 12H5M12 19L5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <div class="logo">
+
+                    <a href="https://engplay.com.br">
+                        <img src="Assets/LOGOTIPO_2-3-1-e1664117386522.png" alt="Engplay" onerror="this.style.display='none'; console.log('[v0] Logo image not found');">
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="benefits-section">
+                <p class="benefits-intro">Se fizer isso, perderá esses benefícios:</p>
+                
+                <div class="comparison-container">
+
+                    <div class="comparison-card with-engplay">
+                        <div class="card-header">
+                            <span class="check-icon">✓</span>
+                            <span class="card-title">COM ENGPLAY</span>
+                        </div>
+                        <div class="benefits-content">
+                            <h4>Domínio de softwares essenciais:</h4>
+                            <ul class="benefits-list">
+                                <li>AutoCAD Completo</li>
+                                <li>Excel para Engenheiros Civis</li>
+                                <li>ORSE Completo</li>
+                                <li>Revit Arquitetônico</li>
+                                <li>MsProject Completo</li>
+                                <li>Projeto Elétrico Completo</li>
+                                <li>Projeto Estrutural no Eberick Completo</li>
+                            </ul>
+                            
+                            <h4>Preparação prática:</h4>
+                            <ul class="benefits-list">
+                                <li>Licitação de Obras 2.0</li>
+                                <li>Orçamento de Obras Completo</li>
+                                <li>Leitura e Interpretação de Projetos</li>
+                            </ul>
+                            
+                            <h4>Diferenciais:</h4>
+                            <ul class="benefits-list">
+                                <li>Flexibilidade para estudar no seu ritmo</li>
+                                <li>Formação completa e aplicada</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="comparison-card without-engplay">
+                        <div class="card-header">
+                            <span class="warning-icon">⚠️</span>
+                            <span class="card-title">SEM ENGPLAY</span>
+                        </div>
+                        <ul class="limitations-list">
+                            <li>Medo do mercado</li>
+                            <li>Insegurança em obras e projetos</li>
+                            <li>Não fatura como deveria</li>
+                            <li>Não conhece todas as áreas</li>
+                            <li>Gasta com cursos caros e espalhados em várias plataformas</li>
+                            <li>Sem liberdade para estudar no próprio ritmo</li>
+                            <li>Medo constante de errar</li>
+                            <li>Faculdade sem prática real</li>
+                        </ul>
+                    </div>
+
+
+                    <a href="https://wa.me/557998435288" target="_blank" class="offer-card-link">
+                        <div class="offer-card">
+                            <div class="offer-content">
+                                <h3>OFERTA EXCLUSIVA</h3>
+
+                                <div class="discount-highlight vibrant-discount">
+                                    <span class="discount-percentage pulsing-text">37%</span>
+                                    <span class="discount-text glowing-red">DE DESCONTO</span>
+                                </div>
+                                <div class="courses vibrant-courses">em 3 diferentes cursos da sua escolha</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+            <p class="additional-text">Além do mais, outros benefícios...</p>
+
+
+            <div class="action-buttons">
+                <button class="cancel-btn" onclick="confirmCancel()">Cancelar</button>
+                <button class="continue-btn" onclick="continueSubscription()">Continuar</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
