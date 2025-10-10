@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Engplay</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+    <div class="container">
+        
+        <div class="main-content">
+            <div class="back-section">
+                <button class="back-btn" onclick="goBack()">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.42-1.41L7.83 13H20v-2z"/>
+                    </svg>
+                 
+                </button>
+                <div class="logo">
+
+                    <a href="https://engplay.com.br">
+                        <img src="Assets/LOGOTIPO_2-3-1-e1664117386522.png" alt="Engplay" onerror="this.style.display='none'">
+                    </a>
+                </div>
+            </div>
+
+            <div class="feedback-form">
+
+                <div class="feedback-form">
+                <p class="instruction-text">Preencha seu email, e nos dê um feedback através das alternativas abaixo:</p>
+
+                <div class="email-field">
+                    <input type="email" placeholder="Digite o e-mail utilizado" class="email-input">
+                </div>
+
+                <div class="checkbox-list">
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="reason" value="suporte">
+                        Dificuldades com o suporte ao cliente.
+                    </label>
+                    
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="reason" value="qualidade">
+                        A qualidade do curso que fiz não atendeu às minhas expectativas.
+                    </label>
+                    
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="reason" value="concluido">
+                        Já usei a plataforma e já fiz o curso que queria.
+                    </label>
+                    
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="reason" value="cartao">
+                        Por hora, estou sem limites no cartão.
+                    </label>
+                    
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="reason" value="tempo">
+                        Não tenho tempo de usar a plataforma como queria.
+                    </label>
+                    
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="reason" value="outra-plataforma">
+                        Estou fazendo outros cursos em outra plataforma.
+                    </label>
+                    
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="reason" value="atualizacoes">
+                        Falta de atualizações regulares ou novos conteúdos.
+                    </label>
+                    
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="reason" value="outros" id="outros-checkbox">
+                        Outros
+                    </label>
+                </div>
+
+
+            </div>
+
+            <div class="action-buttons">
+                <button class="cancel-btn" onclick="confirmCancel()">Cancelar</button>
+                <button class="continue-btn" onclick="submitFeedback()">Continuar</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="confirmModal" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Confirmar ação</h3>
+            </div>
+            <div class="modal-body">
+                <p>Você está prestes a cancelar sua assinatura. Tem certeza que deseja prosseguir?</p>
+                <p class="modal-subtitle">Esta ação não pode ser desfeita.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-secondary" onclick="closeModal()">Manter Plano</button>
+                <button class="btn-primary" onclick="proceedWithCancellation()">Prosseguir com Cancelamento</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="feedback.js"></script>
+    <script src="modal.js"></script>
+</body>
+</html>
