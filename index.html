@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solicitação de Cancelamento - Engplay</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
     <div class="container">
 
         <main class="main-content">
@@ -14,13 +28,15 @@
             <div class="back-section">
                 <button class="back-btn" onclick="goBack()">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path d="M19 12H5M12 19L5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M19 12H5M12 19L5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
                     </svg>
                 </button>
                 <div class="logo">
 
                     <a href="https://engplay.com.br">
-                        <img src="Assets/LOGOTIPO_2-3-1-e1664117386522.png" alt="Engplay" onerror="this.style.display='none'; console.log('[v0] Logo image not found');">
+                        <img src="Assets/LOGOTIPO_2-3-1-e1664117386522.png" alt="Engplay"
+                            onerror="this.style.display='none'; console.log('[v0] Logo image not found');">
                     </a>
                 </div>
             </div>
@@ -28,7 +44,7 @@
 
             <div class="benefits-section">
                 <p class="benefits-intro">Se fizer isso, perderá esses benefícios:</p>
-                
+
                 <div class="comparison-container">
 
                     <div class="comparison-card with-engplay">
@@ -47,14 +63,14 @@
                                 <li>Projeto Elétrico Completo</li>
                                 <li>Projeto Estrutural no Eberick Completo</li>
                             </ul>
-                            
+
                             <h4>Preparação prática:</h4>
                             <ul class="benefits-list">
                                 <li>Licitação de Obras 2.0</li>
                                 <li>Orçamento de Obras Completo</li>
                                 <li>Leitura e Interpretação de Projetos</li>
                             </ul>
-                            
+
                             <h4>Diferenciais:</h4>
                             <ul class="benefits-list">
                                 <li>Flexibilidade para estudar no seu ritmo</li>
@@ -90,7 +106,7 @@
                                     <span class="discount-percentage pulsing-text">3 CURSOS</span>
                                     <span class="discount-text glowing-red">EXCLUSIVOS</span>
                                 </div>
-                                <div class="courses vibrant-courses"> da sua escolha</div>
+                                <div class="courses vibrant-courses">da sua escolha</div>
                             </div>
                         </div>
                     </a>
@@ -110,4 +126,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
